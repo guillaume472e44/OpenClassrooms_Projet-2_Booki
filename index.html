@@ -40,14 +40,29 @@
         <p class="sub-title">En plein centre-ville ou en pleine nature</p>
       </header>
 
+      <form class="search-form">
+        <label for="search-location">
+          <!-- balise i => portion de texte idiomatique, mise à part du reste -->
+          <!-- aria-hidden="true" retire de l'arbre d'accessibilité, c'est un contenu décoratif -->
+          <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+          <!-- sr-only => screen reader only, ce texte n'apparaît pas à l'écran mais est lu par le screen reader  -->
+          <span class="sr-only">Rechercher une localisation</span>
+        </label>
+        <input type="text" id="search-location" class="search-form__input" />
+        <button type="submit" class="search-form__submit-button">
+          <span class="">Rechercher</span>
+          <span class="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+        </button>
+      </form>
+
       <main>
         <div id="hebergements" class="hebergements-and-populaires">
           <section class="hebergements"></section>
           <section class="populaires">
             <div class="populaires-title">
               <h2 class="section-title">Les plus populaires</h2>
-              <!-- balise i => portion de texte idiomatique, mise à part du reste -->
-              <!-- aria-hidden="true" retire de l'arbre d'accessibilité, c'est un contenu décoratif -->
               <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
             </div>
             <div class="populaires-cards">
@@ -73,7 +88,6 @@
                         class="fa-xs fa-solid fa-star neutral-star"
                         aria-hidden="true"
                       ></i>
-                      <!-- sr-only => screen reader only, ce texte n'apparaît pas à l'écran mais est lu par le screen reader  -->
                       <span class="sr-only">Note de 4 sur 5</span>
                     </div>
                   </div>

@@ -8,7 +8,9 @@
 }
 
 /****** General ***********/
-* {
+*,
+input,
+button {
   font-family: "Raleway", sans-serif;
 }
 
@@ -110,6 +112,50 @@ a {
   font-size: 16px;
   font-weight: 400;
   margin-block: 8px 32px;
+}
+
+/****** formulaire ***********/
+
+.search-form {
+  display: flex;
+  margin-block-end: 32px;
+  width: 375px;
+}
+
+.fa-location-dot {
+  background-color: var(--main-bg-color);
+  color: black;
+  padding: 16px 18px;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  cursor: pointer;
+}
+
+.search-form__input {
+  border: none;
+  border-top: 1px solid var(--main-bg-color);
+  border-bottom: 1px solid var(--main-bg-color);
+  width: 100%;
+  padding-inline: 16px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.search-form__submit-button {
+  border: none;
+  background-color: var(--main-color);
+  padding-inline: 16px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  cursor: pointer;
+}
+
+.fa-magnifying-glass {
+  color: white;
+  display: none;
 }
 
 /****** Hebergements And Populaires ***********/
