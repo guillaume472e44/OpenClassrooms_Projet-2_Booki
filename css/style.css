@@ -71,34 +71,34 @@ a {
 
 /****** Header ***********/
 
-.main-nav {
+.header-nav {
   display: flex;
 }
 
-.main-nav__logo {
+.header-nav__logo {
   padding-block: 30px;
   margin-inline-end: auto;
 }
 
-.main-nav__logo img {
+.header-nav__logo img {
   width: 64px;
   height: 20px;
   display: flex;
 }
 
-.main-nav__link {
+.header-nav__link {
   padding-block: 12px;
   font-size: 16px;
   font-weight: 400;
   border-top: 2px solid transparent;
 }
 
-.main-nav__link:hover {
+.header-nav__link:hover {
   color: var(--main-color);
   border-top: 2px solid var(--main-color);
 }
 
-.main-nav__link:nth-last-of-type(1) {
+.header-nav__link:nth-last-of-type(1) {
   margin-inline-start: 48px;
 }
 
@@ -120,15 +120,21 @@ a {
   display: flex;
   margin-block-end: 32px;
   width: 375px;
+  height: 48px;
 }
 
 .fa-location-dot {
   background-color: var(--main-bg-color);
   color: black;
   padding: 16px 18px;
+  height: 100%;
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
   cursor: pointer;
+}
+
+.fa-location-dot::before {
+  font-size: 18px;
 }
 
 .search-form__input {
