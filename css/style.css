@@ -349,6 +349,37 @@ a {
   padding: 18px;
 }
 
+/****** footer ***********/
+.footer-nav {
+  display: flex;
+  background-color: var(--main-bg-color);
+  padding: 20px;
+  margin-block-start: 32px;
+}
+
+.footer-nav__section {
+  flex-basis: 100%;
+}
+
+.footer-nav__section__title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.footer-nav__section__list {
+  list-style: none;
+}
+
+.footer-nav__section__item {
+  padding-block-start: 15px;
+  font-size: 16px;
+  font-weight: 400;
+
+  &:hover {
+    color: var(--main-color);
+  }
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
