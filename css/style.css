@@ -509,8 +509,15 @@ a {
   .search-filters p {
     grid-column: span 2;
   }
+  .search-filters__button {
+    gap: 12px;
+    padding: 14px 12px;
+    min-width: 120px;
+    height: 48px;
+  }
   .search-filters__button span {
-    font-size: 14px;
+    font-size: clamp(12px, 3.8vw, 14px);
+    min-width: fit-content;
   }
 
   /****** Hebergements And Populaires ***********/
@@ -570,6 +577,7 @@ a {
   /****** Activities ***********/
   .activities-cards {
     flex-direction: column;
+    gap: 15px;
   }
   .activities-cards img {
     height: 141px;
